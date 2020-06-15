@@ -53,7 +53,8 @@ function App() {
       <Modal          
         isOpen={secondModalIsOpen} 
         onRequestClose={() => setSecondModalIsOpen(false)}
-        shouldCloseOnOverlayClick={true}
+        shouldCloseOnEsc={false}
+        shouldCloseOnOverlayClick={false}
         style={{
           overlay:{
             backgroundColor: 'rgba(255, 255, 255, 0.8)'            
